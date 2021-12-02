@@ -25,7 +25,9 @@ abstract class Auto {
     //zum Bremsen
     public abstract function bremsen($aenderung);
     //zum Gasgeben
-    public abstract function beschleunigen($aenderung);
+    public abstract function beschleunigen(int $bes){
+    $this-> geschwindigkeit += $bes;
+    }
 
 }
 
